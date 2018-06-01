@@ -1,11 +1,11 @@
-var topics = ["baskeball", "baseball", "football"]
+var topics = ["Basketball", "Baseball", "Football"]
 
 
 function createGifButton(){
     $("#made-button").on("click", function(event){
     event.preventDefault();
       var gifButton = $("#forms").val()
-      var buttonElem = $("<button>")
+      var buttonElem = $("<button>")  
     buttonElem.text(gifButton);
     var input = $("#forms").val().trim();
     buttonElem.attr("id", input);
@@ -47,6 +47,8 @@ for(var j = 0; j < topics.length; j++){
   $(".buttons").append(initButton);
   createGif();
 }
+
+
 
 
 
